@@ -1,0 +1,39 @@
+body{
+    background-color: azure;
+}
+.iphone{
+    margin:20px auto;
+    max-width: 366px;
+    position: relative;
+    padding-top: 85px;
+}
+.bg{
+    position: absolute;
+    z-index: -1;
+    top: -130px;
+    left: -80px;
+    width:520px;
+    height: 1000px;
+}
+.display{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 14px;
+    max-width: 312px;
+    margin: 10px auto 60px;
+    justify-items: center; 
+    
+}
+.display *,
+.footer *{
+    max-width:60px;
+    max-height: 60px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 14px;
+    padding: 20px 28px;
+    justify-items: center; 
+}
